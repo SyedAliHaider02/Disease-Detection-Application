@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart disease</title>
+    <style type="text/css">
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: black;
+        }
+
+        body {
+            background-color: #BBE2E7;
+            border: 10px solid white;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>HEART DISEASE PREDICTION</h1>
+    <form method="POST" action="{{ url_for('home') }}">
+        <fieldset>
+            <legend>Fill the details</legend>
+            <br>
+            Age
+            <input type="number" class="age" name="age" min="0" max="150">
+            <br>
+            <br>
+            Gender
+            <input type="number" class="Gender" name="gender" min="0" max="1">
+            <br><br>
+            cp
+            <input type="number" class="cp" name="cp">
+            <br><br>
+            Trestbps
+            <input type="number" name="tresbps" class="Trestbps">
+            <br><br>
+            Chol
+            <input type="number" name="chol" class="chol">
+            <br><br>
+            Fbs
+            <input type="number" name="fbs" class="fbs">
+            <br><br>
+            Restecg
+            <input type="number" name="restecg" class="restecg">
+            <br><br>
+            Thalach
+            <input type="number" name="thalach" class="thalach">
+            <br><br>
+            Exang
+            <input type="number" name="exang" class="exang">
+            <br><br>
+            Oldpeak
+            <input type="number" name="oldpeak" class="oldpeak">
+            <br><br>
+            Slope
+            <input type="number" name="slope" class="slope">
+            <br><br>
+            Ca
+            <input type="number" name="ca" class="ca">
+            <br><br>
+            Thal
+            <input type="number" name="thal" class="thal">
+            <br><br>
+            <input type="submit" value="predict!">
+        </fieldset>
+    </form>
+</body>
+</html>
